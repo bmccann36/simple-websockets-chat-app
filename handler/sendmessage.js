@@ -5,7 +5,7 @@ const ddbClient = new DynamoDBClient({ region: process.env.AWS_REGION })
 const { TABLE_NAME } = process.env
 
 export const handler = async event => {
-  // console.log('event', JSON.stringify(event, null, 2))
+  console.log('event', JSON.stringify(event, null, 2))
 
   let connectionData
 

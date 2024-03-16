@@ -1,0 +1,42 @@
+{
+  "headers": {
+    "Host": "4vpdzfa4u1.execute-api.us-east-1.amazonaws.com",
+    "x-api-key": "",
+    "X-Forwarded-For": "",
+    "x-restapi": ""
+  },
+  "multiValueHeaders": {
+    "Host": [
+      "4vpdzfa4u1.execute-api.us-east-1.amazonaws.com"
+    ],
+    "x-api-key": [
+      ""
+    ],
+    "X-Forwarded-For": [
+      ""
+    ],
+    "x-restapi": [
+      ""
+    ]
+  },
+  "requestContext": {
+    "routeKey": "$disconnect",
+    "disconnectStatusCode": 1000,
+    "eventType": "DISCONNECT",
+    "extendedRequestId": "UvTudHsUoAMF1Ow=",
+    "requestTime": "16/Mar/2024:20:24:21 +0000",
+    "messageDirection": "IN",
+    "disconnectReason": "",
+    "stage": "Prod",
+    "connectedAt": 1710620350953,
+    "requestTimeEpoch": 1710620661824,
+    "identity": {
+      "sourceIp": "108.41.138.159"
+    },
+    "requestId": "UvTudHsUoAMF1Ow=",
+    "domainName": "4vpdzfa4u1.execute-api.us-east-1.amazonaws.com",
+    "connectionId": "UvS94cTmoAMCFIA=",
+    "apiId": "4vpdzfa4u1"
+  },
+  "isBase64Encoded": false
+}
