@@ -4,8 +4,6 @@ const client = new DynamoDBClient()
 
 export const handler = async event => {
 
-  console.log('event', JSON.stringify(event, null, 2))
-
   const deleteParams = {
     TableName: process.env.TABLE_NAME,
     Key: {

@@ -5,8 +5,6 @@ const ddbClient = new DynamoDBClient({ region: process.env.AWS_REGION })
 const { TABLE_NAME } = process.env
 
 export const handler = async event => {
-  console.log('event', JSON.stringify(event, null, 2))
-
   let connectionData
 
   try {
@@ -24,10 +22,12 @@ export const handler = async event => {
     endpoint: `https://${event.requestContext.domainName}/${event.requestContext.stage}`,
   })
 
+  // only parses event.body.data
   const postData = JSON.parse(event.body).data
 
   const postCalls = connectionData.Items.map(async (dynamoItem) => {
     try {
+      // broadcast message to all connections
       console.log(`Sending data to ${dynamoItem.connectionId.S}`)
       const postToConnectionCommand = new PostToConnectionCommand({
         ConnectionId: dynamoItem.connectionId.S,
